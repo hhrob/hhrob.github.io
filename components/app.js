@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (collision && !smiling) {
-            image.src = 'owface.png';
+            image.src = '..assets/owface.png';
             smiling = true;  // Set flag
             setTimeout(() => {
-                image.src = 'neutralface.png';
+                image.src = '..assets/neutralface.png';
                 smiling = false;  // Reset flag after image changes back
             }, 500);
         }
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     face.addEventListener('mouseover', function() {
         if (!smiling) {  // Change the image only if the smiling flag is not set
-            image.src = 'happyface.png';  // Assume you have a smiling face image
+            image.src = '../assets/happyface.png';  
             smiling = true;}
     }
 );
@@ -51,15 +51,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     face.addEventListener('mouseout', function() {
         if (smiling) {  // Change the image only if the smiling flag is not set
-            image.src = 'neutralface.png';  // Assume you have a smiling face image
+            image.src = '..assets/neutralface.png';  
             smiling = false;}
     }
 );
 
     face.addEventListener('click', function(){
-        image.src = 'demonface.png';
+        image.src = '..assets/demonface.png';
         setTimeout(() =>{
-            image.src = 'neutralface.png'
+            image.src = '..assets/neutralface.png'
         }, 300);
     });
 
